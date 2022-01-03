@@ -1,2 +1,0 @@
-#!/bin/bash
-printf '%.*f\n' 2 $NUM
