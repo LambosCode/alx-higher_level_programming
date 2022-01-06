@@ -1,10 +1,9 @@
 #!/usr/bin/python3.4
 if __name__ == "__main__":
-    from sys import path
-    path.append('./')
-import hidden_4
-x = 8
-mth = dir(hidden_4)
-for X in range(1, 4):
-    print("{}".format(mth[x]))
-    x += 1
+    from hidden_4 import *
+mth = dir()
+for x in range(1, len(mth)):
+    if mth[x][0] == '_' and mth[x][1] == '_':
+        continue
+    else:
+        print("{}".format(mth[x]))
