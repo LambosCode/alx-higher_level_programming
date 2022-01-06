@@ -6,13 +6,13 @@ if len(argv) > 4 or len(argv) < 4:
     exit()
 x = int(argv[1])
 y = int(argv[3])
-if argv[2] is "+":
+if argv[2] == "+":
     print("{}".format(add(x, y)))
-elif argv[2] is "-":
+elif argv[2] == "-":
     print("{}".format(sub(x, y)))
-elif argv[2] is "*":
+elif argv[2] == "*":
     print("{}".format(mul(x, y)))
-elif argv[2] is "/":
+elif argv[2] == "/":
     print("{}".format(div(x, y)))
 else:
     print("Unknown operator. Available operators: +, -, * and /")
