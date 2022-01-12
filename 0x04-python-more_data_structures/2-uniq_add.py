@@ -1,18 +1,19 @@
 #!/usr/bin/python3
 def uniq_add(my_list=[]):
-    my_list1 = my_list.copy()
-    y = lambda x: x+1
-    i, j, result = 1, 0, 0
-    cnt = len(my_list1)
-    for x in range(0, cnt):
-        if i < cnt - 1:
-            if my_list1[j] == my_list1[i]:
-                my_list1.pop(i)
-            i = y(i)
-            if i >= len(my_list1):
-                j = y(j)
-                i = 0
-    cntd = len(my_list1)
-    for x in range(cntd):
-        result = result + my_list1[x]
-    return result
+    y = len(my_list)
+    x = 0
+    z = 1
+    while x < y and z < y:
+        if my_list[x] != my_list[z]:
+            z = z + 1
+            if z == y:
+                z = 0
+                x = x + 1
+                z = x + 1
+        else:
+            my_list.pop(z)
+            y = len(my_list)
+    z = 0
+    for i in my_list:
+        z = z + i
+    return z
