@@ -2,7 +2,7 @@
 def add_tuple(tuple_a=(),tuple_b=()):
     summ = list()
     cnt = 0
-    while cnt < len(tuple_a) or cnt < len(tuple_b):
+    while cnt < 2:
         if cnt >= len(tuple_a):
             summ.append(tuple_b[cnt])
             cnt += 1
